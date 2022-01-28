@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    display: block;
+    margin: auto;
+    color: #fff;
+}
+
+#bg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    padding: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(https://i.postimg.cc/rwJvY1Xk/bg.gif) no-repeat fixed center;
+    background-size: cover;
+    filter: brightness(80%);
+}
+
+
+#ryucodex {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    padding: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.img-head {
+    width: 95%;
+    display: block;
+    margin: auto;
+}
+
+.img-head-two {
+    width: 50px;
+    display: block;
+    margin: 10px auto;
+}
+
+.text-one {
+    width: 90%;
+    color: rgb(204, 204, 204);
+    display: block;
+    margin: -35px auto 0 auto;
+    font-size: 15px;
+    text-align: center;
+}
+
+.ingfo {
+    width: 90%;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 48px;
+    display: block;
+    margin: 10px auto;
+    font-size: 11px;
+    padding: 7px;
+}
+
+.wheel {
+    display: block;
+    margin: 20px auto;
+}
+
+.img-wheel {
+    width: 370px;
+    display: block;
+    margin: auto;
+}
+
+.disabled {
+    filter: brightness(70%);
+}
+
+#doWheel {
+    background: none;
+    border: none;
+    padding: 0;
+    width: 130px;
+    display: block;
+    margin: -215px auto 0 auto;
+    outline: none;
+}
+
+.rewheel {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.setrewheel {
+    border: 2px solid #4f5166;
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+.setrewheel img {
+    width: 32px;
+    height: 32px;
+    display: block;
+    margin: auto auto 3px auto;
+    border-radius: 100%;
+}
+
+.setrewheel span {
+    text-align: center;
+    font-size: 7px;
+    display: block;
+    margin: auto;
+}
+
+.rewheel-1 {
+    position: relative;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    width: 63px;
+    height: 63px;
+    display: block;
+    margin: -173px 0 0 -158px;
+    padding: 5px 0 0 0;
+    background: #2f385f;
+    border-radius: 100%;
+}
+
+.rewheel-2 {
+    position: relative;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    width: 63px;
+    height: 63px;
+    display: block;
+    margin: 10px 0 0 -220px;
+    padding: 5px 0 0 0;
+    background: #2f385f;
+    border-radius: 100%;
+}
+
+.rewheel-3 {
+    position: relative;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    width: 63px;
+    height: 63px;
+    display: block;
+    margin: 9px 0 0 -158px;
+    padding: 5px 0 0 0;
+    background: #2f385f;
+    border-radius: 100%;
+}
+
+.rewheel-4 {
+    position: relative;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    width: 63px;
+    height: 63px;
+    display: block;
+    margin: -25px 0 0 5px;
+    padding: 5px 0 0 0;
+    background: #2f385f;
+    border-radius: 100%;
+}
+
+.rewheel-5 {
+    position: relative;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    width: 63px;
+    height: 63px;
+    display: block;
+    margin: -103px 0 0 165px;
+    padding: 5px 0 0 0;
+    background: #2f385f;
+    border-radius: 100%;
+}
+
+.rewheel-6 {
+    position: relative;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    width: 63px;
+    height: 63px;
+    display: block;
+    margin: -133px 0 0 225px;
+    padding: 5px 0 0 0;
+    background: #2f385f;
+    border-radius: 100%;
+}
+
+.rewheel-7 {
+    position: relative;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    width: 63px;
+    height: 63px;
+    display: block;
+    margin: -136px 0 0 165px;
+    padding: 5px 0 0 0;
+    background: #2f385f;
+    border-radius: 100%;
+}
+
+.rewheel-8 {
+    position: relative;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    width: 63px;
+    height: 63px;
+    display: block;
+    margin: -102px 0 0 5px;
+    padding: 5px 0 0 0;
+    background: #2f385f;
+    border-radius: 100%;
+}
+
+.ledWheel {
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 10px, inset #ffffe9 0 -1px 9px 8px, rgb(73, 228, 255) 0 2px 12px 8px;
+    -webkit-animation: blinkYellow 1s infinite;
+    -moz-animation: blinkYellow 1s infinite;
+    -ms-animation: blinkYellow 1s infinite;
+    -o-animation: blinkYellow 1s infinite;
+    animation: blinkYellow 0.5s infinite;
+  }
+  
+  @-webkit-keyframes blinkYellow {
+      from { background-color: rgb(73, 228, 255); }
+      50% { background-color: rgb(0, 94, 170); box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #ffffe9 0 -1px 9px, rgb(73, 228, 255) 0 2px 0; }
+      to { background-color: rgb(73, 228, 255); }
+  }
+  @-moz-keyframes blinkYellow {
+      from { background-color: rgb(73, 228, 255); }
+      50% { background-color: rgb(0, 134, 196); box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #ffffe9 0 -1px 9px, rgb(73, 228, 255) 0 2px 0; }
+      to { background-color: rgb(73, 228, 255); }
+  }
+  @-ms-keyframes blinkYellow {
+      from { background-color: rgb(73, 228, 255); }
+      50% { background-color: rgb(0, 134, 196); box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #ffffe9 0 -1px 9px, rgb(73, 228, 255) 0 2px 0; }
+      to { background-color: rgb(73, 228, 255); }
+  }
+  @-o-keyframes blinkYellow {
+      from { background-color: rgb(73, 228, 255); }
+      50% { background-color: rgb(0, 134, 196); box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #ffffe9 0 -1px 9px, rgb(73, 228, 255) 0 2px 0; }
+      to { background-color: rgb(73, 228, 255); }
+  }
+  @keyframes blinkYellow {
+      from { background-color: rgb(73, 228, 255); }
+      50% { background-color: rgb(0, 134, 196); box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #ffffe9 0 -1px 9px, rgb(73, 228, 255) 0 2px 0; }
+      to { background-color: rgb(73, 228, 255); }
+  }
+
+.footer {
+    display: block;
+    margin: 50px auto;
+}
+
+.showReward {
+    width: 100%;
+    height: 100%;
+    display: none;
+    margin: auto;
+    padding: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:rgba(0, 0, 0, 0.7);
+    z-index: 4;
+}
+
+.boxReward {
+    width: 90%;
+    display: block;
+    margin: 20px auto;
+}
+
+.imgBoxReward {
+    width: 100%;
+    min-height: 220px;
+    display: block;
+    margin: auto;
+}
+
+.reward {
+    width: 100%;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+}
+
+.imgReward {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 60px auto;
+}
+
+.rewardName {
+    display: block;
+    margin: -50px auto auto auto;
+    font-size: 9px;
+    text-align: center;
+}
+
+.playerId {
+    display: block;
+    margin: 10px auto;
+}
+
+.form-playerId {
+    width: 150px;
+    display: inline-block;
+    margin: 5px auto;
+    outline: none;
+    font-size: 10px;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+    color: #000;
+}
+
+#msgErr {
+    font-size: 10px;
+    display: none;
+    margin: 5px auto;
+}
+
+#checkId {
+    width: 80px;
+    display: block;
+    margin: 3px auto;
+    outline: none;
+    font-size: 10px;
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+    color: #000;
+}
+
+.ryubackdrop {
+    font-family: 'Teko', sans-serif;
+    width: 100%;
+    height: 100%;
+    display: none;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0, 0.5);
+    z-index: 99;
+}
+
+.ryuboxlogin {
+    width: 90%;
+    display: block;
+    margin: 80px auto;
+    background: #091449;
+    border: 1px solid #091449;
+    border-radius: 5px;
+}
+
+.closeBox {
+    width: 24px;
+    height: 25px;
+    padding-top: -1px;
+    position: fixed;
+    right: 10px;
+    margin-top: -25px;
+    float: right;
+    background: #fff;
+    color: #091449;
+    border-radius: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: left;
+}
+
+.closeBox i {
+    font-size: 13px;
+    margin-left: -4px;
+}
+
+.app-subheader img {
+    width: 90%;
+    height: 33px;
+    display: block;
+    margin: auto auto -20px auto;
+}
+
+.txt-sub {
+    position: relative; 
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin-top: -29px;
+}
+
+.ryutextbox {
+    font-size: 20px;
+}
+
+.txtLogin2 {
+    width: 85%;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+}
+
+.facebook {
+    background: #3b5998;
+    color: #fff;
+}
+.twitter {
+    background: #08a0e9;
+    color: #fff;
+}
+.popup-login {
+	background:rgba(0,0,0,0.5);
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:9999;
+}
+.popup-box-login-fb {
+	background:#ECEFF6;
+	max-width:330px;
+	height:auto;
+	position:relative;
+	margin:50px auto;
+	margin-top:1.9%;
+	text-align:center;
+	font-family:'Teko';
+	color:#000;
+	border-radius:10px;
+}
+.popup-box-login-twitter {
+	background:#fff;
+	max-width:330px;
+	height:350px;
+	position:relative;
+	margin:50px auto;
+	margin-top:10%;
+	text-align:center;
+	font-family:'Teko';
+	color:#000;
+	border-radius:10px;
+}
+.close-fb {
+	background:#000;
+	width:20px;
+	height:20px;
+	color:#fff;
+	text-align:center;
+	text-decoration:none;
+	border-radius:50%;
+	border:1.5px solid #fff;
+	position:absolute;
+	top:-8px;
+	right:-10px;
+	display:block;
+}
+.close-fb i {
+	color:#fff;
+	padding-top:1px;
+}
+.close-other {
+	background:#000;
+	width:20px;
+	height:20px;
+	color:#fff;
+	text-align:center;
+	text-decoration:none;
+	border-radius:50%;
+	border:1.5px solid #fff;
+	top:-8px;
+	right:-10px;
+	position:absolute;
+	z-index:9999999;
+	display:block;
+}
+.close-other i {
+	color:#fff;
+	padding-top:1px;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 400px;
+        display: block;
+        margin: auto;
+        color: #fff;
+    }
+    
+    #bg {
+        width: 400px;
+        height: 100%;
+        display: block;
+        margin: auto;
+        padding: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url(../img/bg.jpg) no-repeat fixed center;
+        background-size: cover;
+        filter: brightness(80%);
+    }
+    
+    #ryucodex {
+        width: 400px;
+        height: 100%;
+        display: block;
+        margin: auto;
+        padding: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .showReward {
+        width: 380px;
+        height: 100%;
+        display: none;
+        margin: auto;
+        padding: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background:rgba(0, 0, 0, 0.7);
+        z-index: 4;
+    }
+    
+    .boxReward {
+        width: 380px;
+        display: block;
+        margin: 20px auto;
+    }
+    
+    .imgBoxReward {
+        width: 340px;
+        min-height: 220px;
+        display: block;
+        margin: auto;
+    }
+    
+    .reward {
+        width: 100%;
+        display: block;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right:0;
+    }
+
+    .ryubackdrop {
+        font-family: 'Teko', sans-serif;
+        width: 400px;
+        height: 100%;
+        display: none;
+        margin: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0, 0.5);
+        z-index: 99;
+    }
+}
